@@ -55,7 +55,7 @@ QString Nuria::Template::ValueNode::render (TemplateProgramPrivate *dptr) {
 	QVariant v = evaluate (dptr);
 	
 	if (v.userType () != QMetaType::QString) {
-		v = Variant::convert< QString > (v);
+		v.convert (QMetaType::QString);
 	}
 	
 	return v.toString ();

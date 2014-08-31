@@ -155,7 +155,7 @@ bool Nuria::Template::VariableAcessor::walkMetaObject (MetaObject *meta, QVarian
 	int begin = meta->methodLowerBound (name);
 //	int end = meta->methodUpperBound (name);
 	
-	if (begin > 0) {
+	if (begin >= 0) {
 		// TODO: Warn if there are multiple functions with this name
 		cur = QVariant::fromValue (meta->method (begin).callback (object));
 		return walkChain (cur, chain, index + 1);
