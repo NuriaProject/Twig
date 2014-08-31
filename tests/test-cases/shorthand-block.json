@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% block first 'foo'|capitalize %}",
+  "output": "Foo",
+  "error": "",
+  "skip": false
+}

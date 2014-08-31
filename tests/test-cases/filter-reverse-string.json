@@ -1,0 +1,7 @@
+{
+  "variables": {},
+  "template": "{{ '123'|reverse }}",
+  "output": "321",
+  "error": "",
+  "skip": false
+}

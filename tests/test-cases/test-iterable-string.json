@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{{ ('foo' is iterable) ? 'k' : 'f' }} {{ ('foo' is not iterable) ? 'f' : 'k' }}",
+  "output": "f f",
+  "error": "",
+  "skip": false
+}

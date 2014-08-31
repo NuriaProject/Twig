@@ -1,0 +1,7 @@
+{
+  "variables": { "var": true },
+  "template": "{% if var %}Ok{% else %}{% set foo = 'bar' %}{% endif %}{{ foo }}",
+  "output": "Ok",
+  "error": "",
+  "skip": false
+}

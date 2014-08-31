@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% if 'foo' matches '[bar' %}Fail{% endif %}",
+  "output": "",
+  "error": "Compiler:InvalidRegularExpression",
+  "skip": false
+}

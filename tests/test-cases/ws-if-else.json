@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": " {%- if true %} a {% else %} A {% endif %} , {% if true -%} b {% else %} B {% endif %} , {% if true %} c {%- else %} C {% endif %} , {% if true %} d {% else -%} D {% endif %} , {% if true %} e {% else %} E {%- endif %} , {% if true %} f {% else %} F {% endif -%} , {%- if false %} a {% else %} A {% endif %} , {% if false -%} b {% else %} B {% endif %} , {% if false %} c {%- else %} C {% endif %} , {% if false %} d {% else -%} D {% endif %} , {% if false %} e {% else %} E {%- endif %} , {% if false %} f {% else %} F {% endif -%} ,",
+  "output": " a  , b  ,  c ,  d  ,  e  ,  f , A  ,  B  ,  C  , D  ,  E ,  F ,",
+  "error": "",
+  "skip": false
+}

@@ -1,0 +1,10 @@
+{
+  "variables": { },
+  "template": {
+    "other": "{% block first %}Foo{% endblock %}",
+    "main": "{% extends 'other' %}{% block first %}The Block{% endblock %} - {{ block('first') }}"
+  },
+  "output": "The Block - The Block",
+  "error": "",
+  "skip": false
+}

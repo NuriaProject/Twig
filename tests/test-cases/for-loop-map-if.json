@@ -1,0 +1,7 @@
+{
+  "variables": { "map": { "a": "N", "b": 2, "c": "N" } },
+  "template": "{% for k,v in map if v == 'N' %}{{ k ~ v }},{% endfor %}",
+  "output": "aN,cN,",
+  "error": "",
+  "skip": false
+}

@@ -1,0 +1,7 @@
+{
+  "variables": { "a": 123 },
+  "template": "{{ (a is defined) ? 'y' : 'n' }}{{ (a is not defined) ? 'n' : 'y' }}",
+  "output": "yy",
+  "error": "",
+  "skip": false
+}

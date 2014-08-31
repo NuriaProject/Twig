@@ -1,0 +1,7 @@
+{
+  "variables": { "foo": 1 },
+  "template": "{{ \"#{foo} #{foo + 1}\" }}",
+  "output": "1 2",
+  "error": "",
+  "skip": false
+}

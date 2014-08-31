@@ -1,0 +1,7 @@
+{
+  "variables": { "list": [ 1, 2, 3 ] },
+  "template": "{% for cur in list|reverse %}{{ cur }}{% endfor %}",
+  "output": "321",
+  "error": "",
+  "skip": false
+}

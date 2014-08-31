@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": " {%- autoescape -%} abc {%- endautoescape -%} , {{ 'foo' -}} ",
+  "output": "abc, foo",
+  "error": "",
+  "skip": false
+}

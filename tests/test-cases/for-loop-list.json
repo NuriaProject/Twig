@@ -1,0 +1,7 @@
+{
+  "variables": { "list": [ "one", "two", "three" ] },
+  "template": "{% for cur in list %}{{ cur }},{% endfor %}",
+  "output": "one,two,three,",
+  "error": "",
+  "skip": false
+}

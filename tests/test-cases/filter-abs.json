@@ -1,0 +1,7 @@
+{
+  "variables": {},
+  "template": "{{ 123|abs }} {{ (-123)|abs }}",
+  "output": "123 123",
+  "error": "",
+  "skip": false
+}

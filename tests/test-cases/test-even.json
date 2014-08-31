@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% for a in [ 0, 1, 1.5, 2 ] %}{{ (a is even) ? 'Y' : 'N' }}{{ (a is not even) ? 'Y' : 'N' }} {% endfor %}",
+  "output": "YN NY NY YN ",
+  "error": "",
+  "skip": false
+}

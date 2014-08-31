@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% for a in [ 0, 1, 1.5, 2 ] %}{{ (a is odd) ? 'Y' : 'N' }}{{ (a is not odd) ? 'Y' : 'N' }} {% endfor %}",
+  "output": "NY YN YN NY ",
+  "error": "",
+  "skip": false
+}

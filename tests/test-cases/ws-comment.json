@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": " {# foo -#} , {#- bar -#} , {#- baz #} ",
+  "output": " ,, ",
+  "error": "",
+  "skip": false
+}

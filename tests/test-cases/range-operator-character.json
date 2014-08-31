@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% for i in 'C' .. 'A' %}{{ i }},{% endfor %}",
+  "output": "C,B,A,",
+  "error": "",
+  "skip": false
+}

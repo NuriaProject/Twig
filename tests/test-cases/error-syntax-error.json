@@ -1,0 +1,7 @@
+{
+  "variables": { "name": "foo" },
+  "template": "random syntax error: {% autoescape name %}{% endautoescape %}",
+  "output": "",
+  "error": "Parser:SyntaxError",
+  "skip": false
+}

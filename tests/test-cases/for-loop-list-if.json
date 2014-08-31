@@ -1,0 +1,7 @@
+{
+  "variables": { "list": [ 1, 2, 3, 4 ] },
+  "template": "{% for cur in list if cur is divisible by 2 %}{{ cur }},{% endfor %}",
+  "output": "2,4,",
+  "error": "",
+  "skip": false
+}

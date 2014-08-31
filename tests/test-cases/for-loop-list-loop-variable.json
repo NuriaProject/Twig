@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% for i in 1 .. 3 %}{{ \"#{i} #{loop.index} #{loop.index0} #{loop.revindex} #{loop.revindex0} #{loop.first} #{loop.last},\" }}{% endfor %}",
+  "output": "1 1 0 3 2 true false,2 2 1 2 1 false false,3 3 2 1 0 false true,",
+  "error": "",
+  "skip": false
+}

@@ -1,0 +1,7 @@
+{
+  "variables": {},
+  "template": "{% if false %}true{% else %}false{% endif %}",
+  "output": "false",
+  "error": "",
+  "skip": false
+}

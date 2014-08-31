@@ -1,0 +1,10 @@
+{
+  "variables": { },
+  "template": {
+    "other": "Other",
+    "main": "Foo {% include 'other' %} Bar"
+  },
+  "output": "Foo Other Bar",
+  "error": "",
+  "skip": false
+}

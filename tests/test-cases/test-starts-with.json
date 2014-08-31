@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% if 'foo' starts with 'f' %}Yes{% endif %}",
+  "output": "Yes",
+  "error": "",
+  "skip": false
+}

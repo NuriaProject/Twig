@@ -1,0 +1,7 @@
+{
+  "variables": { "variable": "<a>foo</a>" },
+  "template": "{{ variable|striptags|capitalize }}",
+  "output": "Foo",
+  "error": "",
+  "skip": false
+}

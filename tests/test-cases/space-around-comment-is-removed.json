@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "Something:\n   {# Foo #}\nTest",
+  "output": "Something:Test",
+  "error": "",
+  "skip": false
+}

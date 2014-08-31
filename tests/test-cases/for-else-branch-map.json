@@ -1,0 +1,7 @@
+{
+  "variables": { "map": { } },
+  "template": "{% for k,v in map %}a{% else %}nothing{% endfor %}",
+  "output": "nothing",
+  "error": "",
+  "skip": false
+}

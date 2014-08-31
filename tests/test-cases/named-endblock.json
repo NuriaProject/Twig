@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% block first %}First{% endblock first %}",
+  "output": "First",
+  "error": "",
+  "skip": false
+}

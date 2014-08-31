@@ -1,0 +1,7 @@
+{
+  "variables": { "a": 123 },
+  "template": "{{ (a is null) ? 'f' : 'k' }} {{ (a is not null) ? 'k' : 'f' }}",
+  "output": "k k",
+  "error": "",
+  "skip": false
+}

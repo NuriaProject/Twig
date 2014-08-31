@@ -1,0 +1,8 @@
+{
+  "variables": { },
+  "_": "Overrides 'bar' after 'foo' is overriden, after which 'bar' has been destroyed. Due to the block map, this could potentionally crash.",
+  "template": "{% block foo %}foo {% block bar %}bar{% endblock %}{% endblock %}{% block foo %}Foo{% endblock %}{% block bar %}Bar{% endblock %}",
+  "output": "FooBar",
+  "error": "",
+  "skip": false
+}

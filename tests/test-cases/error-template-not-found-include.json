@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% include 'does not exist' %}",
+  "output": "",
+  "error": "Loader:TemplateNotFound",
+  "skip": false
+}

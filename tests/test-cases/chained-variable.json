@@ -1,0 +1,7 @@
+{
+  "variables": { "list": [ { "foo": "bar" } ] },
+  "template": "{{ list[0].foo }}",
+  "output": "bar",
+  "error": "",
+  "skip": false
+}

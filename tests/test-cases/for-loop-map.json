@@ -1,0 +1,7 @@
+{
+  "variables": { "map": { "a": 1, "b": 2, "c": 3 } },
+  "template": "{% for k,v in map %}{{ k ~ v }},{% endfor %}",
+  "output": "a1,b2,c3,",
+  "error": "",
+  "skip": false
+}

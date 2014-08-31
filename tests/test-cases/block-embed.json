@@ -1,0 +1,11 @@
+{
+  "variables": { },
+  "template": {
+    "one": "one {% block first %}A{% endblock %} one",
+    "inner": "inner {% block first %}A{% endblock %} inner",
+    "main": "{% extends 'one' %} {% block first %}B{% endblock %}{% embed 'inner' %}{% block first %}C{% endblock %}{% endembed %}"
+  },
+  "output": "one B one inner C inner",
+  "error": "",
+  "skip": false
+}

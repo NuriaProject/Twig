@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "Something:\n   {% set value = 'foo' %}\n{% if true %}\n   {{- value -}}\n{% endif %}\n",
+  "output": "Something:foo",
+  "error": "",
+  "skip": false
+}

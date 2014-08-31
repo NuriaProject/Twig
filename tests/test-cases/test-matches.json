@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% if 'foo' matches '.oo' %}Yes{% endif %}",
+  "output": "Yes",
+  "error": "",
+  "skip": false
+}

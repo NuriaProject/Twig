@@ -1,0 +1,7 @@
+{
+  "variables": { "list": [ ] },
+  "template": "{% for cur in list %}a{% else %}nothing{% endfor %}",
+  "output": "nothing",
+  "error": "",
+  "skip": false
+}

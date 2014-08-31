@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% autoescape 'foo' %}bar{% endautoescape %}",
+  "output": "",
+  "error": "Compiler:InvalidEscapeMode",
+  "skip": false
+}

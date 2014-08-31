@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% for i in [0,1,2] %}{{ (i is divisible by 2) ? 'Y' : 'N' }}{{ (i is not divisible by 2) ? 'Y' : 'N' }} {% endfor %}",
+  "output": "NY NY YN ",
+  "error": "",
+  "skip": false
+}

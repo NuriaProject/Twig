@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{{ 'bar'|e('foo') }}",
+  "output": "",
+  "error": "Renderer:InvalidEscapeMode",
+  "skip": false
+}

@@ -1,0 +1,7 @@
+{
+  "variables": {},
+  "template": "{{ (10 * 3 + 5) ** 2 }}",
+  "output": "1225",
+  "error": "",
+  "skip": false
+}

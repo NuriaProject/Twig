@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% filter striptags %}<a>hello</a>{% endfilter %} {% filter striptags|title %}<a>hello world</a>{% endfilter %}",
+  "output": "hello Hello World",
+  "error": "",
+  "skip": false
+}

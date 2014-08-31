@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{{ true ? 'yes' : 'no' }} {{ false ? 'yes' : 'no' }} {{ 'yes' ?: 'no' }} {{ false ?: 'no' }} {{ true ? 'yes' }} {{ false ? 'yes' }}",
+  "output": "yes no yes no yes ",
+  "error": "",
+  "skip": false
+}

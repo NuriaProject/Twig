@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": " {%- block one %} One {% endblock %} , {% block two -%} Two {% endblock %} , {% block three %} Three {%- endblock %} , {% block four %} Four {% endblock -%} ",
+  "output": " One  , Two  ,  Three ,  Four ",
+  "error": "",
+  "skip": false
+}

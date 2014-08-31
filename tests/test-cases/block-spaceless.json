@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% spaceless %}  <p>\n   <a> foo </a>\n  </p>\n{% endspaceless %}",
+  "output": "<p><a> foo </a></p>",
+  "error": "",
+  "skip": false
+}

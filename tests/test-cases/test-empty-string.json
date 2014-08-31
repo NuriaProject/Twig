@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{{ ('' is empty) ? 'k' :'f' }} {{ ('foo' is empty) ? 'f' :'k' }} {{ ('' is not empty) ? 'f' :'k' }} {{ ('foo' is not empty) ? 'k' :'f' }}",
+  "output": "k k k k",
+  "error": "",
+  "skip": false
+}

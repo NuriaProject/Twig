@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{{ variable }}",
+  "output": "",
+  "error": "Renderer:VariableNotSet",
+  "skip": false
+}

@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% block foo %}{{ parent() }}{% endblock %}",
+  "output": "",
+  "error": "Compiler:NoParentBlock",
+  "skip": false
+}

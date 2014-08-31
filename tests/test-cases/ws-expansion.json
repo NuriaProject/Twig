@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": " {{ 'foo' -}} , {{- 'foo' -}} , {{- 'foo' }} ",
+  "output": " foo,foo,foo ",
+  "error": "",
+  "skip": false
+}

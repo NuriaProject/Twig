@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% include '' %}",
+  "output": "",
+  "error": "Compiler:EmptyTemplateName",
+  "skip": false
+}

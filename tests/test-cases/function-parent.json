@@ -1,0 +1,11 @@
+{
+  "variables": { },
+  "template": {
+    "base": "{% block first %}Base{% endblock %}",
+    "other": "{% extends 'base' %}{% block first %}{{ parent() }} Other{% endblock %}",
+    "main": "{% extends 'other' %}{% block first %}{{ parent() }} Main{% endblock %}"
+  },
+  "output": "Base Other Main",
+  "error": "",
+  "skip": false
+}

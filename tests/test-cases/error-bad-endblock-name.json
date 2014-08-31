@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% block first %}First{% endblock second %}",
+  "output": "",
+  "error": "Parser:BadEndblockName",
+  "skip": false
+}

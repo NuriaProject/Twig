@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% if 'abc' ends with 'bc' %}Yes{% endif %}",
+  "output": "Yes",
+  "error": "",
+  "skip": false
+}

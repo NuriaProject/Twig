@@ -1,0 +1,10 @@
+{
+  "variables": { },
+  "template": {
+    "other": "other {% block first %}First{% endblock %} {% block second %}Second{% endblock %} other",
+    "main": "{% extends 'other' %}{% block first %}B{% endblock %}"
+  },
+  "output": "other B Second other",
+  "error": "",
+  "skip": false
+}

@@ -1,0 +1,7 @@
+{
+  "variables": { "name": "foo" },
+  "template": "{% include name %}",
+  "output": "",
+  "error": "Compiler:NonConstantExpression",
+  "skip": false
+}

@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": { "some": "template" },
+  "output": "",
+  "error": "Loader:TemplateNotFound",
+  "skip": false
+}

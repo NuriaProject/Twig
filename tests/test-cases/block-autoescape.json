@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{% autoescape %}<a>{{ 'foo<'|e }}</a>{% endautoescape %} {% autoescape 'url' %}a b{% endautoescape %}",
+  "output": "&lt;a&gt;foo&lt;&lt;/a&gt; a%20b",
+  "error": "",
+  "skip": false
+}

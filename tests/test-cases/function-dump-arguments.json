@@ -1,0 +1,7 @@
+{
+  "variables": { "foo": 123 },
+  "template": "{{ dump(foo, 123, 123.45, 'string', [1,2,3], { 'foo': 'bar' }) }}",
+  "output": "QVariant(double, 123) , QVariant(int, 123) , QVariant(double, 123.45) , QVariant(QString, \"string\") , QVariant(QVariantList, (QVariant(int, 1) ,  QVariant(int, 2) ,  QVariant(int, 3) ) ) , QVariant(QVariantMap, QMap((\"foo\", QVariant(QString, \"bar\") ) ) )",
+  "error": "",
+  "skip": false
+}

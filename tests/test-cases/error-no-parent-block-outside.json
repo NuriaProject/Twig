@@ -1,0 +1,7 @@
+{
+  "variables": { },
+  "template": "{{ parent() }}",
+  "output": "",
+  "error": "Compiler:NoParentBlock",
+  "skip": false
+}

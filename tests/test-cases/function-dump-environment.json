@@ -1,0 +1,7 @@
+{
+  "variables": { "foo": 123 },
+  "template": "{{ (foo == foo) ? dump() }}",
+  "output": "QVariant(QVariantMap, QMap((\"foo\", QVariant(double, 123) ) ) ) ",
+  "error": "",
+  "skip": false
+}
