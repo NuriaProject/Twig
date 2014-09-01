@@ -55,8 +55,7 @@ SET(NuriaTwig_SRC
     src/nuria/templateprogram.hpp
 )
 
-# C++11
-LIST(APPEND CMAKE_CXX_FLAGS "-std=c++11")
+# 
 add_definitions(-DNURIA_TWIG_LIBRARY)
 
 # Create build target
