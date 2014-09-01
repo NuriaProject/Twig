@@ -19,6 +19,7 @@
 #define NURIA_MEMORYTEMPLATELOADER_HPP
 
 #include "templateloader.hpp"
+#include "twig_global.hpp"
 #include <QMap>
 
 namespace Nuria {
@@ -33,7 +34,7 @@ class MemoryTemplateLoaderPrivate;
  * 
  * \note Template names are case-sensitive
  */
-class MemoryTemplateLoader : public TemplateLoader {
+class NURIA_TWIG_EXPORT MemoryTemplateLoader : public TemplateLoader {
 	Q_OBJECT
 public:
 	

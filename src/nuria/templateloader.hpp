@@ -18,6 +18,7 @@
 #ifndef NURIA_TEMPLATELOADER_HPP
 #define NURIA_TEMPLATELOADER_HPP
 
+#include "twig_global.hpp"
 #include <QObject>
 
 namespace Nuria {
@@ -37,7 +38,7 @@ namespace Nuria {
  * changes to a template source file.
  * 
  */
-class TemplateLoader : public QObject {
+class NURIA_TWIG_EXPORT TemplateLoader : public QObject {
 	Q_OBJECT
 public:
 	

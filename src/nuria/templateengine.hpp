@@ -19,6 +19,7 @@
 #define NURIA_TEMPLATEENGINE_HPP
 
 #include <nuria/callback.hpp>
+#include "twig_global.hpp"
 #include <QVariant>
 #include <QObject>
 
@@ -171,7 +172,7 @@ class TemplateStack;
  * call flushCache() afterwards.
  * 
  */
-class TemplateEngine : public QObject {
+class NURIA_TWIG_EXPORT TemplateEngine : public QObject {
 	Q_OBJECT
 public:
 	

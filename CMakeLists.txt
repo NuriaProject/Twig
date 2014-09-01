@@ -42,6 +42,7 @@ SET(NuriaTwig_SRC
     src/private/templateengine_p.hpp
     src/private/variableaccessor.cpp
     src/private/variableaccessor.hpp
+    src/nuria/twig_global.hpp
     src/memorytemplateloader.cpp
     src/nuria/memorytemplateloader.hpp
     src/templateengine.cpp

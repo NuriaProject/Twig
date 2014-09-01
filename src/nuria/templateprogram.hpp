@@ -18,8 +18,9 @@
 #ifndef NURIA_TEMPLATEPROGRAM
 #define NURIA_TEMPLATEPROGRAM
 
-#include "templateerror.hpp"
 #include <nuria/callback.hpp>
+#include "templateerror.hpp"
+#include "twig_global.hpp"
 #include <QSharedData>
 #include <QStringList>
 
@@ -67,7 +68,7 @@ class TemplateEngine;
  * \sa neededVariables canRender render
  * 
  */
-class TemplateProgram {
+class NURIA_TWIG_EXPORT TemplateProgram {
 public:
 	
 	/** Constructor for a invalid instance. */

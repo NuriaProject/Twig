@@ -18,6 +18,7 @@
 #ifndef NURIA_TEMPLATEERROR
 #define NURIA_TEMPLATEERROR
 
+#include "twig_global.hpp"
 #include <QSharedData>
 #include <QDebug>
 
@@ -41,7 +42,7 @@ namespace Template {
  * 
  * \note The debug operator of TemplateError also pretty-prints the location.
  */
-struct Location {
+struct NURIA_TWIG_EXPORT Location {
 	constexpr Location (int row = 0, int column = 0)
 	        : row (row), column (column)
 	{ }
@@ -72,7 +73,7 @@ struct Location {
  * \sa component error what location
  * 
  */
-class TemplateError {
+class NURIA_TWIG_EXPORT TemplateError {
 public:
 	
 	/** List of components to indicate where processing failed. */
@@ -195,6 +196,6 @@ private:
 }
 
 /** Debug operator for Nuria::TemplateError. */
-QDebug operator<< (QDebug dbg, const Nuria::TemplateError &error);
+NURIA_TWIG_EXPORT QDebug operator<< (QDebug dbg, const Nuria::TemplateError &error);
 
 #endif // NURIA_TEMPLATEERROR
