@@ -15,7 +15,7 @@
  *       distribution.
  */
 
-#include "memorytemplateloader.hpp"
+#include "nuria/memorytemplateloader.hpp"
 #include <nuria/debug.hpp>
 #include <QtTest/QTest>
 

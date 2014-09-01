@@ -17,8 +17,8 @@
 
 #include "compiler.hpp"
 
-#include "../templateengine.hpp"
-#include "../templateloader.hpp"
+#include "../nuria/templateengine.hpp"
+#include "../nuria/templateloader.hpp"
 #include "templateengine_p.hpp"
 #include "tokenizer.hpp"
 #include "astnodes.hpp"

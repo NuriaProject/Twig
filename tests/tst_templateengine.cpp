@@ -15,8 +15,8 @@
  *       distribution.
  */
 
-#include "memorytemplateloader.hpp"
-#include "templateengine.hpp"
+#include "nuria/memorytemplateloader.hpp"
+#include "nuria/templateengine.hpp"
 #include <nuria/debug.hpp>
 #include <QJsonParseError>
 #include <QJsonDocument>

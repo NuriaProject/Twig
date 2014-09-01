@@ -18,7 +18,7 @@
 #ifndef NURIA_TEMPLATENGINE_PRIVATE_HPP
 #define NURIA_TEMPLATENGINE_PRIVATE_HPP
 
-#include "../templateerror.hpp"
+#include "../nuria/templateerror.hpp"
 #include <nuria/callback.hpp>
 #include "astnodes.hpp"
 #include <QSharedData>

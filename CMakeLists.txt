@@ -43,15 +43,15 @@ SET(NuriaTwig_SRC
     src/private/variableaccessor.cpp
     src/private/variableaccessor.hpp
     src/memorytemplateloader.cpp
-    src/memorytemplateloader.hpp
+    src/nuria/memorytemplateloader.hpp
     src/templateengine.cpp
-    src/templateengine.hpp
+    src/nuria/templateengine.hpp
     src/templateloader.cpp
-    src/templateloader.hpp
+    src/nuria/templateloader.hpp
     src/templateerror.cpp
-    src/templateerror.hpp
+    src/nuria/templateerror.hpp
     src/templateprogram.cpp
-    src/templateprogram.hpp
+    src/nuria/templateprogram.hpp
 )
 
 # C++11
@@ -78,7 +78,7 @@ INSTALL(TARGETS NuriaTwig
         RUNTIME DESTINATION lib
 )
 
-INSTALL(DIRECTORY src/ DESTINATION include/nuria
+INSTALL(DIRECTORY src/nuria/ DESTINATION include/nuria
         FILES_MATCHING PATTERN "*.hpp"
         PATTERN "private" EXCLUDE
         PATTERN "grammar" EXCLUDE

@@ -15,7 +15,7 @@
  *       distribution.
  */
 
-#include "templateloader.hpp"
+#include "nuria/templateloader.hpp"
 
 Nuria::TemplateLoader::TemplateLoader (QObject *parent)
 	: QObject (parent)

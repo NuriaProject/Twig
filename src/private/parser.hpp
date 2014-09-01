@@ -18,7 +18,7 @@
 #ifndef NURIA_TEMPLATE_PARSER_HPP
 #define NURIA_TEMPLATE_PARSER_HPP
 
-#include "../templateerror.hpp"
+#include "../nuria/templateerror.hpp"
 #include <nuria/tokenizer.hpp>
 #include "astnodes.hpp"
 #include <QObject>

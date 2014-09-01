@@ -18,7 +18,7 @@
 #ifndef NURIA_TEMPLATE_BUILTINS_HPP
 #define NURIA_TEMPLATE_BUILTINS_HPP
 
-#include "../templateerror.hpp"
+#include "../nuria/templateerror.hpp"
 #include "templateengine_p.hpp"
 #include <QVariant>
 #include <QObject>

@@ -15,7 +15,7 @@
  *       distribution.
  */
 
-#include "templateprogram.hpp"
+#include "nuria/templateprogram.hpp"
 
 #include "private/templateengine_p.hpp"
 #include "private/astnodes.hpp"

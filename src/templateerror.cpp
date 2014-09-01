@@ -15,7 +15,7 @@
  *       distribution.
  */
 
-#include "templateerror.hpp"
+#include "nuria/templateerror.hpp"
 
 namespace Nuria {
 class TemplateErrorPrivate : public QSharedData {

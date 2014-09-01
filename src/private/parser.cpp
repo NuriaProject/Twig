@@ -20,7 +20,7 @@
 #include <QVariant>
 #include <assert.h>
 
-#include "../templateengine.hpp"
+#include "../nuria/templateengine.hpp"
 #include "templateengine_p.hpp"
 #include <nuria/tokenizer.hpp>
 #include "../grammar/twig.h"

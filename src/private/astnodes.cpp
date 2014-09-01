@@ -21,7 +21,7 @@
 #include <nuria/variant.hpp>
 #include <nuria/debug.hpp>
 
-#include "../templateloader.hpp"
+#include "../nuria/templateloader.hpp"
 #include "variableaccessor.hpp"
 #include "builtins.hpp"
 #include "compiler.hpp"

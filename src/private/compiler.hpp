@@ -18,7 +18,7 @@
 #ifndef NURIA_TEMPLATE_COMPILER_HPP
 #define NURIA_TEMPLATE_COMPILER_HPP
 
-#include "../templateerror.hpp"
+#include "../nuria/templateerror.hpp"
 #include <QVariant>
 #include <QObject>
 

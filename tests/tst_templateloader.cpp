@@ -15,7 +15,7 @@
  *       distribution.
  */
 
-#include "templateloader.hpp"
+#include "nuria/templateloader.hpp"
 #include <nuria/debug.hpp>
 #include <QtTest/QTest>
 

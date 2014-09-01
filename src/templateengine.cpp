@@ -15,15 +15,15 @@
  *       distribution.
  */
 
-#include "templateengine.hpp"
+#include "nuria/templateengine.hpp"
 
 #include <nuria/debug.hpp>
 
 #include "private/templateengine_p.hpp"
+#include "nuria/templateloader.hpp"
 #include "private/tokenizer.hpp"
 #include "private/compiler.hpp"
 #include "private/parser.hpp"
-#include "templateloader.hpp"
 
 Nuria::TemplateEngine::TemplateEngine (QObject *parent)
 	: QObject (parent), d_ptr (new TemplateEnginePrivate)
