@@ -279,6 +279,12 @@ public:
 	 */
 	TemplateError lastError () const;
 	
+	/**
+	 * Checks if \a program is outdated, meaning, if the templates it
+	 * consists of were modified after \a program was compiled.
+	 */
+	bool isProgramOutdated (const TemplateProgram &program);
+	
 	/** Clears the program cache. */
 	void flushCache ();
 	

@@ -56,6 +56,13 @@ public:
 	virtual bool hasTemplate (const QString &name);
 	
 	/**
+	 * Returns \c true if \a name has been changed \a since.
+	 * The default implementation always returns \c false, which is fine for
+	 * template loaders making use of the changed signals in this class.
+	 */
+	virtual bool hasTemplateChanged (const QString &name, const QDateTime &since);
+	
+	/**
 	 * Returns the template data of the template called \a name.
 	 * The default implementation returns \a name.
 	 * 

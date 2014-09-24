@@ -122,7 +122,7 @@ bool Nuria::TemplateEngine::hasFunction (const QString &name) {
 
 Nuria::TemplateProgram Nuria::TemplateEngine::program (const QString &templateName) {
 	TemplateProgram *ptr = this->d_ptr->cache.object (templateName);
-	if (ptr) {
+	if (ptr && !isProgramOutdated (*ptr)) {
 		return updateProgramVariables (templateName, ptr);
 	}
 	
@@ -242,6 +242,20 @@ void Nuria::TemplateEngine::connectToLoaderSignals () {
 	         this, &TemplateEngine::removeChangedTemplateFromCache);
 	connect (this->d_ptr->loader, &TemplateLoader::allTemplatesChanged,
 	         this, &TemplateEngine::flushCache);
+}
+
+bool Nuria::TemplateEngine::isProgramOutdated (const TemplateProgram &program) {
+	auto it = program.d->dependencies.constBegin ();
+	auto end = program.d->dependencies.constEnd ();
+	
+	for (; it != end; ++it) {
+		if (this->d_ptr->loader->hasTemplateChanged (*it, program.d->compiledAt)) {
+			return true;
+		}
+		
+	}
+	
+	return false;
 }
 
 void Nuria::TemplateEngine::flushCache () {

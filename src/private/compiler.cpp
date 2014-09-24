@@ -23,6 +23,7 @@
 #include "tokenizer.hpp"
 #include "astnodes.hpp"
 #include "parser.hpp"
+#include <QDateTime>
 
 Nuria::Template::Compiler::Compiler (TemplateEngine *engine, TemplateEnginePrivate *dptr)
         : QObject (engine), d_ptr (dptr)
@@ -43,11 +44,13 @@ bool Nuria::Template::Compiler::compile (TemplateProgramPrivate *program) {
 		program->root->node = result;
 	}
 	
+	program->compiledAt = QDateTime::currentDateTime ();
 	return result;
 }
 
 Nuria::Template::Node *Nuria::Template::Compiler::loadAndParse (const QString &templateName, TemplateProgramPrivate *dptr) {
 	QByteArray templ = this->d_ptr->loader->load (templateName);
+	dptr->dependencies.append (templateName);
 	
 	if (templ.isEmpty ()) {
 		dptr->error = TemplateError (TemplateError::Loader,

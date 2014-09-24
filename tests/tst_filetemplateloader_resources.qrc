@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="unreachable">files/unreachable</file>
+    </qresource>
+    <qresource prefix="/first">
+        <file alias="a">files/a</file>
+    </qresource>
+    <qresource prefix="/second">
+        <file alias="b">files/b</file>
+        <file alias="c.twig">files/c.twig</file>
+    </qresource>
+</RCC>

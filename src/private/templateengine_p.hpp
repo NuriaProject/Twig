@@ -22,6 +22,7 @@
 #include <nuria/callback.hpp>
 #include "astnodes.hpp"
 #include <QSharedData>
+#include <QDateTime>
 #include <QVariant>
 #include <QVector>
 #include <QCache>
@@ -127,6 +128,7 @@ public:
 	
 	QExplicitlySharedDataPointer< Template::SharedNode > root;
 	mutable TemplateError error;
+	QDateTime compiledAt;
 	QLocale locale;
 	
 	// List of needed templates

@@ -31,6 +31,12 @@ bool Nuria::TemplateLoader::hasTemplate (const QString &name) {
 	return !name.isEmpty ();
 }
 
+bool Nuria::TemplateLoader::hasTemplateChanged (const QString &name, const QDateTime &since) {
+	Q_UNUSED(name)
+	Q_UNUSED(since)
+	return false;
+}
+
 QByteArray Nuria::TemplateLoader::load (const QString &name) {
 	return name.toUtf8 ();
 }

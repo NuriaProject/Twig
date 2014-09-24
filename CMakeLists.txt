@@ -45,6 +45,8 @@ SET(NuriaTwig_SRC
     src/nuria/twig_global.hpp
     src/memorytemplateloader.cpp
     src/nuria/memorytemplateloader.hpp
+    src/filetemplateloader.cpp
+    src/nuria/filetemplateloader.hpp
     src/templateengine.cpp
     src/nuria/templateengine.hpp
     src/templateloader.cpp
@@ -87,6 +89,7 @@ INSTALL(DIRECTORY src/nuria/ DESTINATION include/nuria
 # Tests
 enable_testing()
 add_unittest(NAME tst_memorytemplateloader NURIA NuriaTwig)
+add_unittest(NAME tst_filetemplateloader NURIA NuriaTwig RESOURCES tests/tst_filetemplateloader_resources.qrc)
 add_unittest(NAME tst_templateengine NURIA NuriaTwig RESOURCES tests/tst_templateengine_resources.qrc)
 add_unittest(NAME tst_templateloader NURIA NuriaTwig)
 add_unittest(NAME tst_templatetokenizer NURIA NuriaTwig)
