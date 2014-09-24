@@ -26,7 +26,8 @@
 #include "builtins.hpp"
 #include "compiler.hpp"
 
-#define ENABLE_TRACING
+// Uncomment to enable verbose compiler traces
+// #define ENABLE_TRACING
 
 #ifdef ENABLE_TRACING
 #define TRACE(...) __VA_ARGS__
