@@ -22,6 +22,15 @@
 #include <nuria/metaobject.hpp>
 #include <QMetaProperty>
 
+static Nuria::MetaObject *metaObjectForType (const QByteArray &typeName) {
+	Nuria::MetaObject *meta = Nuria::MetaObject::byName (typeName);
+	if (!meta && typeName.endsWith ('*')) {
+		return metaObjectForType (typeName.left (typeName.length () - 1));
+	}
+	
+	return meta;
+}
+
 bool Nuria::Template::VariableAcessor::walkChain (QVariant &cur, const QVariantList &chain, int index) {
 	
 	if (index >= chain.length ()) {
@@ -54,7 +63,7 @@ bool Nuria::Template::VariableAcessor::walkChain (QVariant &cur, const QVariantL
 	}
 	
 	// MetaObject type
-	MetaObject *meta = MetaObject::byName (QMetaType::typeName (type));
+	MetaObject *meta = metaObjectForType (QMetaType::typeName (type));
 	if (meta) {
 		return walkMetaObject (meta, cur, chain, index);
 	}
