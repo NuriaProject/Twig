@@ -495,6 +495,7 @@ Nuria::Template::Node *Nuria::Template::ChainedVariableNode::compile (Compiler *
 	reduceChain (dptr);
 	
 	// 
+	this->isFunction = false;
 	return VariableNode::compile (compiler, dptr);
 }
 
