@@ -15,8 +15,8 @@
  *       distribution.
  */
 
-#ifndef NURIA_TEMPLATEERROR
-#define NURIA_TEMPLATEERROR
+#ifndef NURIA_TEMPLATEERROR_HPP
+#define NURIA_TEMPLATEERROR_HPP
 
 #include "twig_global.hpp"
 #include <QSharedData>
@@ -198,4 +198,4 @@ private:
 /** Debug operator for Nuria::TemplateError. */
 NURIA_TWIG_EXPORT QDebug operator<< (QDebug dbg, const Nuria::TemplateError &error);
 
-#endif // NURIA_TEMPLATEERROR
+#endif // NURIA_TEMPLATEERROR_HPP

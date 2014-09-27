@@ -15,8 +15,8 @@
  *       distribution.
  */
 
-#ifndef NURIA_TEMPLATEPROGRAM
-#define NURIA_TEMPLATEPROGRAM
+#ifndef NURIA_TEMPLATEPROGRAM_HPP
+#define NURIA_TEMPLATEPROGRAM_HPP
 
 #include <nuria/callback.hpp>
 #include "templateerror.hpp"
@@ -166,4 +166,4 @@ private:
 
 Q_DECLARE_METATYPE(Nuria::TemplateProgram)
 
-#endif // NURIA_TEMPLATEPROGRAM
+#endif // NURIA_TEMPLATEPROGRAM_HPP
