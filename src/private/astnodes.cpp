@@ -1217,8 +1217,9 @@ Nuria::Template::Node *Nuria::Template::StringNode::compile (Compiler *compiler,
 	
 	// If this string does no interpolation, replace it with a TextNode.
 	if (this->values.isEmpty ()) {
-		TRACE(nDebug() << "StringNode" << this << "doesn't do interpolation and is reduced to a TextNode");
-		return dptr->transferTrim (this, new TextNode (this->loc, this->string));
+		TRACE(nDebug() << "StringNode" << this
+		      << "doesn't do interpolation and is reduced to a LiteralValueNode");
+		return dptr->transferTrim (this, new LiteralValueNode (this->loc, this->string));
 	}
 	
 	// String interpolation to be done in render()
