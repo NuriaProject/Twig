@@ -2,6 +2,8 @@
 # Source: https://github.com/NuriaProject/Twig
 cmake_minimum_required(VERSION 2.8.8)
 
+cmake_policy(SET CMP0020 NEW)
+
 add_subdirectory(lemon)
 
 # Base configuration
@@ -57,9 +59,6 @@ SET(NuriaTwig_SRC
     src/nuria/templateprogram.hpp
 )
 
-# 
-add_definitions(-DNURIA_TWIG_LIBRARY)
-
 # Create build target
 ADD_LIBRARY(NuriaTwig SHARED ${NuriaTwig_SRC})
 target_link_libraries(NuriaTwig NuriaCore)
@@ -73,11 +72,17 @@ set_target_properties(
     SOVERSION ${NURIA_SOVERSION}
 )
 
+# Add public include directories to target
+set_property(TARGET NuriaTwig APPEND PROPERTY INTERFACE_INCLUDE_DIRECTORIES
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
+  $<INSTALL_INTERFACE:include>
+)
+
 # Install target
-INSTALL(TARGETS NuriaTwig
+INSTALL(TARGETS NuriaTwig EXPORT NuriaTwigConfig
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib
-        RUNTIME DESTINATION lib
+        RUNTIME DESTINATION bin
 )
 
 INSTALL(DIRECTORY src/nuria/ DESTINATION include/nuria
@@ -85,6 +90,8 @@ INSTALL(DIRECTORY src/nuria/ DESTINATION include/nuria
         PATTERN "private" EXCLUDE
         PATTERN "grammar" EXCLUDE
 )
+
+INSTALL(EXPORT NuriaTwigConfig DESTINATION lib/cmake/NuriaTwig)
 
 # Tests
 enable_testing()

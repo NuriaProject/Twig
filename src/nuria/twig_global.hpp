@@ -18,7 +18,7 @@
 #ifndef NURIA_TWIG_GLOBAL_HPP
 #define NURIA_TWIG_GLOBAL_HPP
 
-#include <QtCore/qglobal.h>
+#include <qglobal.h>
 
 #if defined(NuriaTwig_EXPORTS)
 #  define NURIA_TWIG_EXPORT Q_DECL_EXPORT
