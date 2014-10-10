@@ -15,6 +15,9 @@ SET(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 # Dependencies
 FIND_PACKAGE(Qt5Core REQUIRED)
+if (NOT TARGET NuriaCore)
+  FIND_PACKAGE(NuriaCore REQUIRED)
+endif()
 
 if (UNIX)
   set (LEMON_EXECUTABLE ${CMAKE_CURRENT_BINARY_DIR}/lemon/lemon)
@@ -73,7 +76,7 @@ set_target_properties(
 )
 
 # Add public include directories to target
-set_property(TARGET NuriaTwig APPEND PROPERTY INTERFACE_INCLUDE_DIRECTORIES
+target_include_directories(NuriaTwig PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
   $<INSTALL_INTERFACE:include>
 )
@@ -92,6 +95,8 @@ INSTALL(DIRECTORY src/nuria/ DESTINATION include/nuria
 )
 
 INSTALL(EXPORT NuriaTwigConfig DESTINATION lib/cmake/NuriaTwig)
+
+export(TARGETS NuriaTwig FILE "${NURIA_CMAKE_PREFIX}/NuriaTwigConfig.cmake")
 
 # Tests
 enable_testing()
