@@ -15,7 +15,7 @@
  */
 
 #include "nuria/filetemplateloader.hpp"
-#include <nuria/debug.hpp>
+#include <nuria/logger.hpp>
 #include <QTemporaryFile>
 #include <QtTest/QTest>
 #include <QThread>

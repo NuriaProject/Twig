@@ -15,7 +15,7 @@
  */
 
 #include "nuria/templateloader.hpp"
-#include <nuria/debug.hpp>
+#include <nuria/logger.hpp>
 #include <QtTest/QTest>
 
 using namespace Nuria;

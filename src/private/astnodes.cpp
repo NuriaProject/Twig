@@ -18,7 +18,7 @@
 
 #include <nuria/callback.hpp>
 #include <nuria/variant.hpp>
-#include <nuria/debug.hpp>
+#include <nuria/logger.hpp>
 
 #include "../nuria/templateloader.hpp"
 #include "variableaccessor.hpp"

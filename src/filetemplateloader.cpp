@@ -92,7 +92,7 @@ bool Nuria::FileTemplateLoader::hasTemplate (const QString &name) {
 	return !findTemplatePath (name).isEmpty ();
 }
 
-#include <nuria/debug.hpp>
+#include <nuria/logger.hpp>
 bool Nuria::FileTemplateLoader::hasTemplateChanged (const QString &name, const QDateTime &since) {
 	QString path = findTemplatePath (name);
 	if (path.isEmpty ()) {

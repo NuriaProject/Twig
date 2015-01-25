@@ -23,7 +23,7 @@
 #include "templateengine_p.hpp"
 #include <nuria/tokenizer.hpp>
 #include "../grammar/twig.h"
-#include <nuria/debug.hpp>
+#include <nuria/logger.hpp>
 #include "astnodes.hpp"
 
 namespace Nuria {

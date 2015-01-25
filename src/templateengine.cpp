@@ -16,7 +16,7 @@
 
 #include "nuria/templateengine.hpp"
 
-#include <nuria/debug.hpp>
+#include <nuria/logger.hpp>
 
 #include "private/templateengine_p.hpp"
 #include "nuria/templateloader.hpp"

@@ -16,7 +16,7 @@
 
 #include "nuria/memorytemplateloader.hpp"
 #include "nuria/templateengine.hpp"
-#include <nuria/debug.hpp>
+#include <nuria/logger.hpp>
 #include <QJsonParseError>
 #include <QJsonDocument>
 #include <QtTest/QTest>

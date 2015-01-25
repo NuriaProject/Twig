@@ -15,7 +15,7 @@
  */
 
 #include "private/tokenizer.hpp"
-#include <nuria/debug.hpp>
+#include <nuria/logger.hpp>
 #include <QtTest/QTest>
 
 #include "grammar/twig.h"
